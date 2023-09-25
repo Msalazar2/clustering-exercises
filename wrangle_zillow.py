@@ -193,10 +193,7 @@ def get_continuous_feats(df) -> list:
 def handle_missing_values(df, 
                           prop_required_column, 
                           prop_required_row):
-    '''
-    Utilizing an input proportion for the column and rows of DataFrame df,
-    drop the missing values per the axis contingent on the amount of data present.
-    '''
+  
     prop_missing_column = 1 - prop_required_column 
     # multiply the axis with with the appropriate ratio
     # this will return the number of rows that we want to reference
